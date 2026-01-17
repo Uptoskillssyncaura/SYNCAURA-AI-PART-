@@ -150,6 +150,3 @@ Analytics dashboards for AI insights
 Multilingual support
 Model optimization and fine-tuning
 Cloud-native deployment (GCP / AWS)
-
-## 🏗️ Architecture Overview
-
