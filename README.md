@@ -61,15 +61,13 @@ By consolidating multiple AI capabilities into a **single, unified backend**, Sy
 - Suggests possible resolutions  
 
 Frontend / Platform
-|
-v
+        ↓
 FastAPI Backend (API Layer)
-|
-v
+        ↓
 AI Services (NLP, CV, Speech)
-|
-v
+        ↓
 Models & Data Pipelines
+
 
 
 ### Tech Stack
@@ -84,17 +82,111 @@ Models & Data Pipelines
 ## 📁 Project Structure
 
 syncaura-ai/
-├── docs/ # Documentation & architecture
-├── data/ # Raw and processed datasets
-├── models/ # Trained & saved AI models
-├── src/ # Core AI logic (feature-wise)
-├── api/ # FastAPI application & routes
-├── tests/ # Unit & integration tests
-├── scripts/ # Automation & setup scripts
-├── docker/ # Containerization configs
+├── README.md
 ├── requirements.txt
 ├── .env.example
-└── README.md
+├── .gitignore
+│
+├── docs/
+│   ├── overview.md
+│   ├── architecture.md
+│   ├── feature_mapping.md
+│   ├── api_endpoints.md
+│   └── evaluation.md
+│
+├── data/
+│   ├── raw/
+│   │   ├── chatbot/
+│   │   ├── captions/
+│   │   ├── audio/
+│   │   ├── attendance/
+│   │   ├── emails/
+│   │   └── complaints/
+│   │
+│   ├── processed/
+│   └── samples/
+│
+├── models/
+│   ├── chatbot/
+│   ├── caption_generator/
+│   ├── note_taking/
+│   ├── attendance/
+│   ├── leave_management/
+│   ├── spam_checker/
+│   └── complaint_validator/
+│
+├── src/
+│   ├── chatbot/
+│   │   ├── train.py
+│   │   ├── inference.py
+│   │   ├── prompts.py
+│   │   └── utils.py
+│   │
+│   ├── caption_generator/
+│   │   ├── model.py
+│   │   ├── inference.py
+│   │   └── caption_utils.py
+│   │
+│   ├── note_taking/
+│   │   ├── speech_to_text.py
+│   │   ├── summarizer.py
+│   │   └── meeting_notes.py
+│   │
+│   ├── attendance/
+│   │   ├── face_recognition.py
+│   │   ├── geo_check.py
+│   │   └── attendance_logic.py
+│   │
+│   ├── leave_management/
+│   │   ├── leave_classifier.py
+│   │   ├── auto_approval.py
+│   │   └── notifier.py
+│   │
+│   ├── spam_checker/
+│   │   ├── classifier.py
+│   │   └── email_parser.py
+│   │
+│   ├── complaint_validator/
+│   │   ├── validator.py
+│   │   ├── categorizer.py
+│   │   └── resolution_suggester.py
+│   │
+│   └── common/
+│       ├── config.py
+│       ├── logger.py
+│       ├── constants.py
+│       └── utils.py
+│
+├── api/
+│   ├── app.py                 # FastAPI entry point
+│   ├── dependencies.py
+│   └── routes/
+│       ├── chatbot.py
+│       ├── caption.py
+│       ├── notes.py
+│       ├── attendance.py
+│       ├── leave.py
+│       ├── spam.py
+│       └── complaints.py
+│
+├── tests/
+│   ├── test_chatbot.py
+│   ├── test_caption.py
+│   ├── test_notes.py
+│   ├── test_attendance.py
+│   ├── test_leave.py
+│   ├── test_spam.py
+│   └── test_complaints.py
+│
+├── scripts/
+│   ├── run_server.sh
+│   ├── download_models.sh
+│   └── setup_env.sh
+│
+└── docker/
+    ├── Dockerfile
+    └── docker-compose.yml
+
 
 
 ---
@@ -129,24 +221,3 @@ pip install -r requirements.txt
 ```bash
 cp .env.example .env
 ```
-
-Update .env with required API keys and configurations.
-
-▶️ Running the Server
-uvicorn api.app:app --reload
-
-
-API URL: http://127.0.0.1:8000
-
-Swagger Docs: http://127.0.0.1:8000/docs
-
-🧪 Testing
-pytest tests/
-
-
-🚧 Future Enhancements :
-Role-based AI personalization
-Analytics dashboards for AI insights
-Multilingual support
-Model optimization and fine-tuning
-Cloud-native deployment (GCP / AWS)
