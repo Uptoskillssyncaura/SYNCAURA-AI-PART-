@@ -80,20 +80,18 @@ Models & Data Pipelines
 ---
 
 ## 📁 Project Structure
-
+```
 syncaura-ai/
 ├── README.md
 ├── requirements.txt
 ├── .env.example
 ├── .gitignore
-│
 ├── docs/
 │   ├── overview.md
 │   ├── architecture.md
 │   ├── feature_mapping.md
 │   ├── api_endpoints.md
 │   └── evaluation.md
-│
 ├── data/
 │   ├── raw/
 │   │   ├── chatbot/
@@ -102,10 +100,8 @@ syncaura-ai/
 │   │   ├── attendance/
 │   │   ├── emails/
 │   │   └── complaints/
-│   │
 │   ├── processed/
 │   └── samples/
-│
 ├── models/
 │   ├── chatbot/
 │   ├── caption_generator/
@@ -114,80 +110,26 @@ syncaura-ai/
 │   ├── leave_management/
 │   ├── spam_checker/
 │   └── complaint_validator/
-│
 ├── src/
 │   ├── chatbot/
 │   │   ├── train.py
 │   │   ├── inference.py
 │   │   ├── prompts.py
 │   │   └── utils.py
-│   │
-│   ├── caption_generator/
-│   │   ├── model.py
-│   │   ├── inference.py
-│   │   └── caption_utils.py
-│   │
-│   ├── note_taking/
-│   │   ├── speech_to_text.py
-│   │   ├── summarizer.py
-│   │   └── meeting_notes.py
-│   │
-│   ├── attendance/
-│   │   ├── face_recognition.py
-│   │   ├── geo_check.py
-│   │   └── attendance_logic.py
-│   │
-│   ├── leave_management/
-│   │   ├── leave_classifier.py
-│   │   ├── auto_approval.py
-│   │   └── notifier.py
-│   │
-│   ├── spam_checker/
-│   │   ├── classifier.py
-│   │   └── email_parser.py
-│   │
-│   ├── complaint_validator/
-│   │   ├── validator.py
-│   │   ├── categorizer.py
-│   │   └── resolution_suggester.py
-│   │
-│   └── common/
-│       ├── config.py
-│       ├── logger.py
-│       ├── constants.py
-│       └── utils.py
-│
+│   ├── common/
+│   │   ├── config.py
+│   │   ├── logger.py
+│   │   └── constants.py
 ├── api/
-│   ├── app.py                 # FastAPI entry point
-│   ├── dependencies.py
+│   ├── app.py
 │   └── routes/
 │       ├── chatbot.py
-│       ├── caption.py
-│       ├── notes.py
-│       ├── attendance.py
-│       ├── leave.py
-│       ├── spam.py
-│       └── complaints.py
-│
+│       └── caption.py
 ├── tests/
-│   ├── test_chatbot.py
-│   ├── test_caption.py
-│   ├── test_notes.py
-│   ├── test_attendance.py
-│   ├── test_leave.py
-│   ├── test_spam.py
-│   └── test_complaints.py
-│
-├── scripts/
-│   ├── run_server.sh
-│   ├── download_models.sh
-│   └── setup_env.sh
-│
 └── docker/
     ├── Dockerfile
     └── docker-compose.yml
-
-
+```
 
 ---
 
