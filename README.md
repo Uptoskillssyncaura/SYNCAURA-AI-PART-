@@ -1,196 +1,155 @@
-🚀 Syncaura – AI Module
-📌 Overview
+# 🚀 Syncaura – AI Module
 
-Syncaura is a cutting-edge, all-in-one AI-powered productivity suite designed to transform how modern teams work, collaborate, and make decisions.
-The AI Module of Syncaura provides intelligent automation, insights, and assistance across communication, attendance, content creation, and operational workflows.
+## 📌 Overview
 
-By consolidating multiple AI capabilities into a single, unified backend, Syncaura eliminates the need for fragmented tools—boosting efficiency, accuracy, and team productivity.
+**Syncaura** is a cutting-edge, all-in-one **AI-powered productivity suite** designed to transform how modern teams work, collaborate, and make decisions.
 
-🎯 Key Objectives
+The **AI Module** of Syncaura delivers intelligent automation, actionable insights, and smart assistance across communication, attendance, content creation, and operational workflows.
 
-Automate repetitive organizational tasks using AI
+By consolidating multiple AI capabilities into a **single, unified backend**, Syncaura eliminates fragmented tools—boosting efficiency, accuracy, and overall team productivity.
 
-Enhance team collaboration with intelligent assistance
+---
 
-Provide scalable, production-ready AI services
+## 🎯 Key Objectives
 
-Maintain clean, modular, and secure architecture
+- Automate repetitive organizational tasks using AI  
+- Enhance team collaboration with intelligent assistance  
+- Provide scalable, production-ready AI services  
+- Maintain clean, modular, and secure architecture  
+- Deliver enterprise-grade performance and reliability  
 
-Deliver enterprise-grade performance and reliability
+---
 
-🧠 AI Features
-1️⃣ Intelligent Chatbot
+## 🧠 AI Features
 
-Guides users across the Syncaura platform
+### 1️⃣ Intelligent Chatbot
+- Guides users across the Syncaura platform  
+- Provides contextual help and feature explanations  
+- Supports prompt-based and intent-based responses  
 
-Provides contextual help and feature explanations
+### 2️⃣ AI Caption Generator
+- Automatically generates engaging captions for:
+  - Images  
+  - Posts  
+  - Content uploads  
+  - Meetings and announcements  
 
-Supports prompt-based and intent-based responses
+### 3️⃣ AI Note-Taking Assistant
+- Real-time speech-to-text transcription  
+- Meeting and call summarization  
+- Action-item extraction *(future enhancement)*  
 
-2️⃣ AI Caption Generator
+### 4️⃣ Live Attendance Recorder
+- AI-driven attendance tracking using:
+  - Facial recognition **or**
+  - Geolocation verification  
+- Automatic check-in and attendance record generation  
 
-Automatically generates engaging captions for:
+### 5️⃣ Leave Recorder & Notifier
+- AI-assisted leave request classification  
+- Auto-approval for simple cases  
+- Notification system for approvals and absences  
 
-Images
+### 6️⃣ Spam Email Checker
+- AI-based email classification  
+- Flags phishing, spam, and suspicious content  
+- Designed for integration with internal inbox systems  
 
-Posts
+### 7️⃣ Complaint Validator
+- Analyzes complaints for legitimacy  
+- Automatically categorizes issues  
+- Suggests possible resolutions  
 
-Content uploads
-
-Meetings and announcements
-
-3️⃣ AI Note-Taking Assistant
-
-Real-time speech-to-text transcription
-
-Meeting and call summarization
-
-Action-item extraction (optional enhancement)
-
-4️⃣ Live Attendance Recorder
-
-AI-driven attendance tracking using:
-
-Facial recognition or
-
-Geolocation verification
-
-Automatic check-in and record generation
-
-5️⃣ Leave Recorder & Notifier
-
-AI-assisted leave request classification
-
-Auto-approval for simple cases
-
-Notification system for approvals and absences
-
-6️⃣ Spam Email Checker
-
-AI-based email classification
-
-Flags phishing, spam, and suspicious content
-
-Designed for integration with internal inbox systems
-
-7️⃣ Complaint Validator
-
-Analyzes complaints for legitimacy
-
-Categorizes issues automatically
-
-Suggests possible resolutions
-
-🏗️ Architecture Overview
 Frontend / Platform
-        |
-        v
+|
+v
 FastAPI Backend (API Layer)
-        |
-        v
+|
+v
 AI Services (NLP, CV, Speech)
-        |
-        v
+|
+v
 Models & Data Pipelines
 
 
-Backend Framework: FastAPI
+### Tech Stack
 
-AI Stack: NLP, Computer Vision, Speech Processing
+- **Backend Framework:** FastAPI  
+- **AI Stack:** NLP, Computer Vision, Speech Processing  
+- **Architecture:** Modular, scalable, production-ready  
+- **Deployment:** Docker & CI/CD compatible  
 
-Design: Modular, scalable, production-ready
+---
 
-Deployment Ready: Docker & CI/CD compatible
+## 📁 Project Structure
 
-📁 Project Structure
 syncaura-ai/
-├── docs/              # Documentation & architecture
-├── data/              # Raw and processed datasets
-├── models/            # Trained & saved AI models
-├── src/               # Core AI logic (feature-wise)
-├── api/               # FastAPI application & routes
-├── tests/             # Unit & integration tests
-├── scripts/           # Automation & setup scripts
-├── docker/            # Containerization configs
+├── docs/ # Documentation & architecture
+├── data/ # Raw and processed datasets
+├── models/ # Trained & saved AI models
+├── src/ # Core AI logic (feature-wise)
+├── api/ # FastAPI application & routes
+├── tests/ # Unit & integration tests
+├── scripts/ # Automation & setup scripts
+├── docker/ # Containerization configs
 ├── requirements.txt
 ├── .env.example
 └── README.md
 
-⚙️ Setup & Installation
-1️⃣ Clone the repository
-git clone https://github.com/your-username/syncaura-ai.git
+
+---
+
+## ⚙️ Setup & Installation
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/your-organization/syncaura-ai.git
 cd syncaura-ai
+```
 
-2️⃣ Create virtual environment
+### 2️⃣ Create Virtual Environment
+```bash
 python -m venv venv
-source venv/bin/activate   # Linux/Mac
-venv\Scripts\activate      # Windows
+```
 
-3️⃣ Install dependencies
+Activate it:
+Linux / macOS
+source venv/bin/activate
+
+Windows
+venv\Scripts\activate
+
+3️⃣ Install Dependencies
+```bash
 pip install -r requirements.txt
+```
 
-4️⃣ Configure environment variables
+4️⃣ Configure Environment Variables
+```bash
 cp .env.example .env
+```
 
-
-Update .env with required API keys and configs.
+Update .env with required API keys and configurations.
 
 ▶️ Running the Server
 uvicorn api.app:app --reload
 
 
-API will be available at:
+API URL: http://127.0.0.1:8000
 
-http://127.0.0.1:8000
-
-
-Swagger Docs:
-
-http://127.0.0.1:8000/docs
+Swagger Docs: http://127.0.0.1:8000/docs
 
 🧪 Testing
 pytest tests/
 
-🛡️ Code & Model Integrity Policy
 
-No plagiarism or unauthorized reuse of code/models
-
-API keys and credentials must never be committed
-
-Any misuse of AI resources or data leads to disqualification
-
-Follow secure and ethical AI practices at all times
-
-🤝 Professional Conduct Expectations
-
-Maintain respectful and accountable collaboration
-
-Complete assigned tasks within deadlines
-
-Follow attendance and participation guidelines
-
-Ensure code quality, documentation, and testing standards
-
-📜 Certification & Evaluation
-
-Certificates and performance ratings are awarded only if:
-
-All assigned modules are completed
-
-Code meets quality and security standards
-
-Deadlines and participation requirements are met
-
-Active contribution and professionalism are demonstrated
-
-🚧 Future Enhancements
-
+🚧 Future Enhancements :
 Role-based AI personalization
-
 Analytics dashboards for AI insights
-
 Multilingual support
-
-Model optimization & fine-tuning
-
+Model optimization and fine-tuning
 Cloud-native deployment (GCP / AWS)
+
+## 🏗️ Architecture Overview
+
