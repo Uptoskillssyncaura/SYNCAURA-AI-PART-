@@ -1,0 +1,20 @@
+sentence,label,label_num
+Zara’s internet seems unstable.,not_important,0
+so yeah ritu will set up the training workspace,important,1
+"Okay, I’ll reconnect in a second",not_important,0
+Fatima will prepare the contract outline.,important,1
+Naman will archive outdated resources.,important,1
+so yeah aarav will build the prototype module,important,1
+he server resources must be monitored continuously,important,1
+so yeah ananya is preparing the cost sheet,important,1
+so yeah aman will run the tests by friday,important,1
+so yeah arjun will check the build errors,important,1
+Alisha will update training guides,important,1
+Aman will complete the testing phase by Friday.,important,1
+uh jatin will resolve the redirect bug today afternoon,important,1
+critical bug found,important,1
+memory usage is at 95 percent,important,1
+All UI inconsistencies must be fixed before review,important,1
+The backend needs to be completed by Monday,important,1
+Arjun is responsible for testing phase.,important,1
+QA team must finish the design draft before Monday.,important,1
